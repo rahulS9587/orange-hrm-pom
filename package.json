@@ -1,0 +1,22 @@
+{
+  "name": "orangehrm-automation",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "test:pim": "jest tests/pimWorkflow.test.js"
+  },
+  "dependencies": {
+    "chromedriver": "^135.0.0",
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.7.0",
+    "selenium-webdriver": "^4.10.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "testTimeout": 60000,
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
+  }
+}
